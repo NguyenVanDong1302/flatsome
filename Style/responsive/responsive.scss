@@ -213,3 +213,13 @@
         display: none;
     }
 }
+@media only screen and (max-width: 549px) {
+    .demo-wrapper {
+        display: none;
+    }
+    .product-short-description,
+    .tab-description {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
