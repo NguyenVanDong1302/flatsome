@@ -41,12 +41,17 @@
         }
     }
 }
-@media only screen and (min-width: 768px) {
+// @media only screen and (min-width: 768px) {
+//     .container {
+//         max-width: 100%;
+//     }
+// }
+@media only screen and (max-width: 768px) {
     .container {
         max-width: 100%;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
     .container {
         max-width: 100%;
     }
@@ -54,5 +59,13 @@
 @media only screen and (max-width: 549px) {
     .container {
         max-width: 100%;
+    }
+    .product-short-description{
+            word-wrap: break-word;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+    overflow: hidden;
+    margin: 0;
     }
 }

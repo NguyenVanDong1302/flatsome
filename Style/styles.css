@@ -630,22 +630,56 @@ footer .footer-bottom .footer-bottom__right ul li + li {
 .list-option-product-items .option-product-item {
   padding: 10px;
   flex-direction: column;
-  position: relative;
 }
 .list-option-product-items .option-product-item img {
   width: 100%;
   height: auto;
 }
-.list-option-product-items .option-product-item .product-image {
+.list-option-product-items .option-product-item a {
   position: relative;
-  overflow: hidden;
 }
-.list-option-product-items .option-product-item .product-image a .image-product-hover {
+.list-option-product-items .option-product-item a .option-product__info {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.list-option-product-items .option-product-item a .option-product__info h5,
+.list-option-product-items .option-product-item a .option-product__info p {
+  transition: all 0.5s ease;
+}
+.list-option-product-items .option-product-item a .option-product__info h5 {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #555555;
+}
+.list-option-product-items .option-product-item a .option-product__info p {
+  color: #334862;
+  font-size: 0.7em;
+}
+.list-option-product-items .option-product-item a .option-product__info:hover {
+  background-color: #446084;
+}
+.list-option-product-items .option-product-item a .option-product__info:hover h5,
+.list-option-product-items .option-product-item a .option-product__info:hover p {
+  color: #ffffff;
+}
+.list-option-product-items .option-product-item a .image-product-hover {
   opacity: 0;
   pointer-events: none;
   position: absolute;
   left: 0;
   transition: all 0.7s ease;
+}
+.list-option-product-items .option-product-item .product-image {
+  position: relative;
+  overflow: hidden;
 }
 .list-option-product-items .option-product-item .product-image .quick-view {
   text-overflow: ellipsis;
@@ -728,38 +762,6 @@ footer .footer-bottom .footer-bottom__right ul li + li {
 .list-option-product-items .option-product-item:hover .btn-add-wish-list:hover i {
   margin-left: 1px;
   background-color: #fb1212;
-  color: #ffffff;
-}
-.list-option-product-items .option-product-item .option-product__info {
-  width: 100%;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.95);
-  bottom: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.list-option-product-items .option-product-item .option-product__info h5,
-.list-option-product-items .option-product-item .option-product__info p {
-  transition: all 0.5s ease;
-}
-.list-option-product-items .option-product-item .option-product__info h5 {
-  font-size: 1em;
-  margin-top: 10px;
-  color: #555555;
-}
-.list-option-product-items .option-product-item .option-product__info p {
-  color: #334862;
-  font-size: 0.7em;
-}
-.list-option-product-items .option-product-item .option-product__info:hover {
-  background-color: #446084;
-}
-.list-option-product-items .option-product-item .option-product__info:hover h5,
-.list-option-product-items .option-product-item .option-product__info:hover p {
   color: #ffffff;
 }
 

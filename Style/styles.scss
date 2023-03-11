@@ -687,20 +687,52 @@ footer {
             width: 100%;
             height: auto;
         }
-        // a {
-        position: relative;
+
+        a {
+            position: relative;
+            .option-product__info {
+                width: 100%;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.95);
+                bottom: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                h5,
+                p {
+                    transition: all 0.5s ease;
+                }
+                h5 {
+                    font-size: 1em;
+                    margin-top: 10px;
+                    color: #555555;
+                }
+                p {
+                    color: #334862;
+                    font-size: 0.7em;
+                }
+                &:hover {
+                    background-color: #446084;
+                    h5,
+                    p {
+                        color: #ffffff;
+                    }
+                }
+            }
+            .image-product-hover {
+                opacity: 0;
+                pointer-events: none;
+                position: absolute;
+                left: 0;
+                transition: all 0.7s ease;
+            }
+        }
         .product-image {
             position: relative;
             overflow: hidden;
-            a {
-                .image-product-hover {
-                    opacity: 0;
-                    pointer-events: none;
-                    position: absolute;
-                    left: 0;
-                    transition: all 0.7s ease;
-                }
-            }
             .quick-view {
                 -o-text-overflow: ellipsis;
                 text-overflow: ellipsis;
@@ -792,39 +824,6 @@ footer {
                 }
             }
         }
-        .option-product__info {
-            width: 100%;
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.95);
-            bottom: 15%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            h5,
-            p {
-                transition: all 0.5s ease;
-            }
-            h5 {
-                font-size: 1em;
-                margin-top: 10px;
-                color: #555555;
-            }
-            p {
-                color: #334862;
-                font-size: 0.7em;
-            }
-            &:hover {
-                background-color: #446084;
-                h5,
-                p {
-                    color: #ffffff;
-                }
-            }
-        }
-        // }
     }
 }
 .modal-content {
